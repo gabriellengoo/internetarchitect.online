@@ -1,0 +1,16 @@
+body
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+.iphone iframe {
+    width: 390px;
+    height: 844px;
+    border-radius: 20px; /* Adjust the value to control the roundness */
+    border: 2px solid ; /* Add a border with a color of your choice */
+}
