@@ -12,7 +12,7 @@ export default function Home() {
             <h1 className='text-xs md:text-base font-light pr-2'>Age of technology - planning, designing, and overseeing the construction of modern-day websites </h1>
             <h1 className='text-xs md:text-base font-light pr-2'> (double click in the iPhone screen, on the url to browse sites we have made) </h1>
           </div>
-          <div className="flex">
+          <div className="flex justify-end pr-[2vw] w-[inherit]">
             <h1 className='text-xs md:text-base font-medium pr-2'>Instagram</h1>
             <h1 className='text-xs md:text-base font-medium'>Contact</h1>
             {/* make contact pg look like Apple contacts and make intro */}
