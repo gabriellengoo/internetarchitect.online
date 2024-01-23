@@ -3,3 +3,8 @@ body {
   cursor: url('/public/cursor.png'), auto;
 }
 
+.textblend{
+  mix-blend-mode: difference;
+  color: white;
+  pointer-events: none;
+}

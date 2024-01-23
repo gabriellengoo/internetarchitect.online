@@ -22,16 +22,16 @@ function MeshComponent() {
     mesh.current.scale.x = .05;
     mesh.current.scale.y = .05;
     mesh.current.scale.z = .05;
-    mesh.current.position.y = -1.8; 
+    mesh.current.position.y = -2.3; 
   });
 
   return (
     <mesh ref={mesh} castShadow receiveShadow>
        <primitive object={gltf.scene} position-y={[-1.2]}  >
         {/* <Html wrapperClass="iphone" position={[0,2.5,-1.5]} transform rotation-x={-0.25} distanceFactor={1.16}> */}
-        <Html wrapperClass="iphone" position={[0,47,-1.5]} scale={4.35} transform distanceFactor={10}>
+        <Html wrapperClass="iphone" position={[0,47,-2.5]} scale={4.35} transform distanceFactor={10}>
           {/* <iframe src="https://internetarchitect.online https://megan-site.vercel.app/" https://www.alwaproduction.co.uk/ https://henhouselondon.co.uk/> */}
-          <iframe src="https://megan-site.vercel.app" />
+          <iframe src="https://iframeia.vercel.app/" />
 
         </Html>
         </primitive>
@@ -41,9 +41,9 @@ function MeshComponent() {
 
 export function Shiba() {
   return (
-   <div className="flex justify-center items-center h-screen">
-      <Canvas className="h-2xl w-2xl" >
-        <Environment preset="warehouse" />
+   <div className="flex justify-center fixed top-0 left-0 w-screen z-[-1] items-center h-screen">
+      <Canvas className="h-2xl w-2xl mix-blend-soft-light" >
+        <Environment preset="apartment" background  />
       {/* <PresentationControls> */}
         <PresentationControls global polar={[-0.4,0.2]} azimuth={[-0.4,0.2]}>
         {/* <OrbitControls
