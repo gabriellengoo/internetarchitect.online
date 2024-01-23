@@ -10,7 +10,7 @@ export default function Home() {
           <div className="textblend md:fixed md:top-0 md:left-0 md:z-10">
             <h1 className='text-2xl md:text-4xl font-medium'>The Internet Architects © 24.</h1>
             <h1 className='text-xs md:text-base font-light pr-2'>Age of technology - planning, designing, and overseeing the construction of modern-day websites </h1>
-            <h1 className='text-xs md:text-base font-light pr-2'> (double click the iPhone screen to browse sites we have made) </h1>
+            <h1 className='text-xs md:text-base font-light pr-2'> (double click in the iPhone screen, on the url to browse sites we have made) </h1>
           </div>
           <div className="flex">
             <h1 className='text-xs md:text-base font-medium pr-2'>Instagram</h1>
