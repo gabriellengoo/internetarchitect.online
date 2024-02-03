@@ -1,0 +1,324 @@
+body
+#root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+.iphone iframe {
+    opacity: 0.9;
+    width: 1920px;
+    height: 1080px;
+    border-radius: 40px; /* Adjust the value to control the roundness */
+    /* border: 2px solid ; */
+    /* z-index: 2 !important; */
+}
+
+.iphone iframe::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('smudges.jpeg'); /* Replace 'path/to/your/overlay-image.jpg' with the actual path to your overlay image */
+    opacity: .5; /* Adjust the opacity as needed */
+    border-radius: 20px; /* Match the border-radius of the iframe */
+    /* z-index: 2;  */
+}
+
+.textcolor{
+  color:rgb(219,255,0);
+  color: black;
+  color: #d2d2d2e6;
+  /* color: rgb(255 255 255 / 75%); */
+  /* mix-blend-mode: difference; */
+  /* pointer-events: none; */
+}
+
+@media screen and (min-width: 2560px) {
+  .bigtext {
+    /* Your 4K specific styles go here */
+    padding-top: 3.5rem
+    /* Add any other styles for 4K screens */
+  }
+}
+
+  /* pop */
+
+  .popup-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    color: #2a2a2a;
+    /* color: #ccc; */
+    font-size: 13px;
+    /* z-index: 11 !important; */
+  }
+  
+  .popup-box {
+    background-color: rgb(255 255 255 / 75%);
+    border: 1px solid #ccc;
+    backdrop-filter: blur(1px);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    /* z-index: 11 !important; */
+    position: relative; /* Added this line */
+  }
+  
+  .arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(255 255 255 / 75%);
+    bottom: -10px; /* Added this line */
+    left: 50%; /* Added this line */
+    transform: translateX(-50%); /* Added this line */
+  }
+  
+  
+
+  /* marque */
+.marquee-container {
+     position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    bottom: 0;
+    right: 0;
+    width: 97vw;
+    /* font-size: 13px; */
+    /* backdrop-filter: blur(10px); */
+    padding: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(255 255 255);
+    color: black;
+    /* background-color: rgba(253,253,253,0.32157);
+    background-color: rgb(255 250 250 / 7%); */
+    width: -moz-fit-content;
+    border-radius: 32px;
+  }
+  
+  .marquee-content {
+    
+      animation: bounce 30s infinite;
+    display: inline-block;
+  }
+  
+  /* @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0);
+    }
+    40% {
+      transform: translateX(-100%);
+    }
+    60% {
+      transform: translateX(-50%);
+    }
+  } */
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(10%);
+    }
+    50% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(10%);
+    }
+  }
+  
+
+  /* stars */
+  body {
+    background: url(https://s25.postimg.org/o34d4ditr/image.png) no-repeat black 0% 5%;
+}
+svg#one {
+    position: absolute;
+    left: 30%;
+    transform: translate(-20%, 450%);
+  }
+  
+  svg#two {
+    position: absolute;
+    left: 50%;
+    transform: translate(-40%, 1210%);
+  }
+  
+  svg#three {
+    position: absolute;
+    left: 65%;
+    transform: translate(-30%, 910%);
+  }
+  
+.group {
+    -webkit-transform: translate(42.5px,42.5px);
+    -moz-transform: translate(42.5px,42.5px);
+    transform: translate(42.5px, 42.5px);
+}
+path {
+    -webkit-transform: translate(-42.50px,-42.50px);
+    -moz-transform: translate(-42.50px,-42.50px);
+    transform: translate(-42.50px,-42.50px);
+}
+.large {
+	-webkit-animation: large 2.5s infinite;
+	-moz-animation: large 2.5s infinite;
+}
+.large-2 {
+	-webkit-animation: large-2 2.5s infinite;
+	-moz-animation: large-2 2.5s infinite;
+}
+.small {
+	-webkit-animation: small 2.5s infinite;
+	-moz-animation: small 2.5s infinite;
+}
+@keyframes large {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(360deg) scale(1.5);
+		transform: rotate(360deg) scale(1.5);
+	}
+}
+
+@-webkit-keyframes large {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(360deg) scale(1.5);
+		transform: rotate(360deg) scale(1.5);
+	}
+}
+@-moz-keyframes large {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(360deg) scale(1.5);
+	}
+}
+@keyframes large-2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(0);
+		transform: rotate(45deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(405deg) scale(1.1);
+		transform: rotate(405deg) scale(1.1);
+	}
+}
+@-webkit-keyframes large-2 {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(45deg) scale(0);
+		transform: rotate(45deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(405deg) scale(1.1);
+		transform: rotate(405deg) scale(1.1);
+	}
+}
+@-moz-keyframes large-2 {
+	0% {
+		opacity: 0;
+		transform: rotate(45deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(405deg) scale(1.1);
+	}
+}
+@keyframes small {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(-360deg) scale(1);
+		transform: rotate(-360deg) scale(1.5);
+	}
+}
+@-webkit-keyframes small {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(0deg) scale(0);
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: rotate(-360deg) scale(1);
+		transform: rotate(-360deg) scale(1.5);
+	}
+}
+@-moz-keyframes small {
+	0% {
+		opacity: 0;
+		transform: rotate(0deg) scale(0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-360deg) scale(1.5);
+	}
+}
+
+
+

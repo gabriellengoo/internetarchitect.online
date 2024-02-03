@@ -1,0 +1,16 @@
+
+body {
+  cursor: url('/public/cursor.png'), auto;
+  /* font: mono; */
+}
+
+.textblend{
+  mix-blend-mode: difference;
+  color: white;
+  pointer-events: none;
+}
+
+.textblendonly{
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
